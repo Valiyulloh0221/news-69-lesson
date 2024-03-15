@@ -15,12 +15,11 @@ const Posts = () => {
           <h1>Our Latest Posts</h1>
           <form>
             <input required type="search" placeholder="Search" id="search" />
-            <button htmlFor="search">🔍</button>
           </form>
         </div>
         <div className="cards">
           {posts.map((post) => (
-            <div className="card">
+            <div className="card" key={post.id}>
               <div className="card-img"></div>
               <p className="id">ID: {post.id}</p>
               <h5>{post.body}</h5>
