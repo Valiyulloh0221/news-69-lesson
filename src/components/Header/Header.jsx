@@ -3,6 +3,10 @@ import "../Header/Header.scss";
 const header = () => {
   return (
     <>
+      <div className="home">
+        <a href="">Home</a>
+        <a href="">Details</a>
+      </div>
       <div className="nav-items">
         <a href="">Home</a>
         <a href="">Business</a>
